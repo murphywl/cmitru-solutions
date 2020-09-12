@@ -1,0 +1,55 @@
+.text-light {
+	font-size: 18px;
+}
+.section {
+	margin: 60px 0px 50px 0px;
+}
+h1 {
+	text-align: center;
+}
+.row {
+	margin: 50px 0px 0px 0px;
+}
+h2 {
+	text-align: center;
+	color: orange;
+}
+
+.divwrap {
+	padding: 10px 10px 10px 10px;
+}
+.maindiv {
+	position: relative;
+	text-align: justify;
+	padding: 10px 10px 20px 10px;
+}
+
+.a {
+	color: yellow;
+	text-align: right;
+}
+
+.div {
+	position: absolute;
+	bottom: 3px;
+	right: 6px;
+}
+
+.img-fluid {
+	margin: 20px 0px 0px 0px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+.img-fluid:hover {
+	transition: all 0.3s ease 0s;
+	transform: scale(0.8);
+}
+
+.list-group-item:hover {
+	transition: all 0.3s ease 0s;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+
