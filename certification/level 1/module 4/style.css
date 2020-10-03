@@ -1,0 +1,16 @@
+html,
+body {
+	margin: 0;
+	overflow: hidden;
+	background-color: blue;
+	height: 100vh;
+}
+
+div {
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
