@@ -1,0 +1,194 @@
+body {
+	font-family: 'PT Sans', sans-serif;
+}
+
+ul, li {
+	list-style: none;
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	color: #000;
+}
+
+.header {
+	background-image: url(img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding-bottom: 105px;
+}
+
+.logo {
+	margin: 8px 0px 0px 0px;
+	cursor: pointer;
+}
+.menu {
+	margin: 8px 0 0 0;
+}
+
+.menu__item {
+	margin: 0 57px 0 57px;
+}
+
+.menu__item a {
+	font-size: 22px;
+	font-weight: 700;
+	color: #000;
+}
+
+.offer {
+	margin-top: 117px;
+}
+
+.offer__title {
+	font-size: 32px;
+	margin-bottom: 15px;
+}
+
+.offer__text {
+	font-size: 16px;
+	font-weight: 400;
+	width: 410px;
+}
+
+.icons__item {
+	margin: 40px 30px 0px 0px;
+}
+
+.icons__item a {
+	color: #000;
+	font-size: 40px;
+	transition: all 0.3s ease;
+}
+
+.icons__item a:hover {
+	color: red;
+	transition: all 0.3s ease;
+}
+
+.ipad {
+	display: block;
+	margin: 60px auto;
+	cursor: pointer;
+}
+
+.title {
+	padding: 100px 0 70px 0;
+}
+
+.title__main {
+	font-size: 32px;
+	text-align: center;
+}
+
+.title__text {
+	font-size: 20px;
+	text-align: center;
+}
+
+.feature {
+	margin-bottom: 70px;
+}
+
+.feature__icon {
+	font-size: 50px;
+	margin: 0 35px 0 0;
+}
+
+.feature__text {
+	color: #898989;
+}
+
+.feedback {
+	background: #000;
+	color: #fff;
+}
+
+.blue {
+	color: #95d9fb;
+}
+
+.red {
+	color: red;
+}
+
+.form__input {
+	background: #fff;
+	font-size: 16px;
+	border-radius: 5px;
+	padding: 15px 10px;
+	border: 0;
+	outline: none;
+	width: 580px;
+	margin-right: 20px;
+	margin-bottom: 50px;
+}
+
+.form__button {
+	background: #e0413b;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 16px;
+	border-radius: 5px;
+	width: 130px;
+	cursor: pointer;
+	padding: 15px 0;
+	border: 0;
+	font-weight: 700px;
+}
+
+.footer {
+	background: #000;
+}
+
+.footer_info {
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	padding: 50px 0 94px;
+	width: 184px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+	.logo {
+		display: block;
+		margin: 30px auto;
+	}
+	.offer {
+		text-align: center;
+	}
+	.offer__text {
+		margin: 20px auto;
+	}
+	.icons {
+		justify-content: center;
+	}
+	.icons__item:nth-child(3) {
+		margin: 40px 0px 0px 0px;
+	}
+	.ipad {
+		margin: 30px auto;
+	}
+	.form__button {
+		width: 100%;
+	}
+	.form__input {
+		width: 100%;
+		margin-right: 0px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.ipad {
+		width: 100%;
+	}
+	.menu {
+		flex-direction: column;
+		text-align: center;
+	}
+}

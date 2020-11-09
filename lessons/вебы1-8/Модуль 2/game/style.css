@@ -1,0 +1,27 @@
+a:link {
+	color: #FF00FF;
+}
+
+a:hover {
+	color: #00FFFF;
+}
+
+a:visited {
+	color: #CCCCCC;
+}
+   
+a:active {
+	color: #CCFF00;
+}
+
+a {
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: 800; 
+	font-family: Arial, sans-serif;
+	font-style: italic;
+}
+
+.link {
+	margin-right: 30px;
+}

@@ -1,0 +1,29 @@
+#player1 {
+	position: absolute;
+	background: green;
+	height: 300px;
+	width: 100px;
+	bottom: 10px;
+	left: 50px;
+}
+
+#player2 {
+	position: absolute;
+	background: blue;
+	height: 300px;
+	width: 100px;
+	bottom: 10px;
+	left: 200px;
+}
+
+#winner {
+	position: absolute;
+	background: yellow;
+	height: 100px;
+	width: 100px;
+	left: 125px;
+	top: 250px;
+	font-size: 30px;
+	text-align: center;
+	display: none;
+}

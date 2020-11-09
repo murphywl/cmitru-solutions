@@ -1,0 +1,50 @@
+body {
+	background-image: url('img/monkey.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+table {
+	border: 3px solid black;
+	border-spacing: 5px;
+	margin: 0 auto;
+}
+
+caption {
+	margin-bottom: 10px;
+}
+
+td {
+	border: 1px solid black;
+	padding: 10px;
+	transition: 0.3s ease;
+}
+
+td:hover {
+	border: 3px solid black;
+	padding: 8px;
+	background-color: #AAFFAA;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+tr:nth-child(1){
+	background-color: #F00;
+}
+
+tr:nth-child(2){
+	background-color: #0FF;
+}
+
+tr:nth-child(3){
+	background-color: #0F0;
+}
+
+tr:nth-child(4){
+	background-color: #00F;
+}
+
+td:nth-child(3){
+	background-color: #FF0;
+}

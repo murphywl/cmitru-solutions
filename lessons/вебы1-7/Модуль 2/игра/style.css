@@ -1,0 +1,35 @@
+a:link {
+	color: #FF00FF;
+}
+
+a:hover {
+	color: #00FFFF;
+}
+
+a:visited {
+	color: #CCCCCC;
+}
+
+a:active {
+	color: #CCFF00;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	list-style: none;
+}
+
+ul {
+	display: flex;
+}
+
+h1	{
+	margin: 0 50px;
+}
+
+li {
+	margin: 0 15px;
+}

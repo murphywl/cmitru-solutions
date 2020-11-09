@@ -1,0 +1,38 @@
+body {
+	background-color: cyan;
+	font-size: 20px;
+}
+
+h1 {
+	color: blue;
+}
+
+ul {
+	color: orange;
+}
+
+ol {
+	color: green;
+}
+
+img {
+	width: 400px;
+	transition: 0.8s ease;
+}
+
+.redText {
+	color: red;
+	transition: 0.8s ease;
+}
+
+.redText:hover {
+	color: magenta;
+	transition: 0.8s ease;
+}
+
+img:hover {
+	width: 600px;
+	transition: 0.8s ease;
+}
+
+text-shadow: 5px 5px 20px red;

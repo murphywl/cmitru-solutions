@@ -1,0 +1,19 @@
+ins {
+	color: #00FF00;
+}
+
+h1 {
+	color: #00FFFF;
+}
+
+del {
+	color: #cccccc;
+}
+
+b {
+	color: rgba(255,0,0,0.2);
+}
+
+i {
+	color: #FF00FF;
+}

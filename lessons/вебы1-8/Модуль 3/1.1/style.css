@@ -1,0 +1,19 @@
+#minusButton {
+	width: 80px;
+	height: 80px;
+	background: orange;
+	font-size: 40px;
+	border-radius: 50%;
+}
+
+#plusButton {
+	width: 80px;
+	height: 80px;
+	background: magenta;
+	font-size: 40px;
+	border-radius: 10px;
+}
+
+#counterNumbers	{
+	margin-left: 80px;
+}

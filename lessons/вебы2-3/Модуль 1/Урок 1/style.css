@@ -1,0 +1,36 @@
+img {
+	width: 400px;
+	height: 300px;
+	border: none;
+}
+
+h1 {
+	text-shadow: 2px 2px 2px grey;
+	transition: 0.2s ease;
+}
+
+h1:hover {
+	text-shadow: 10px 10px 10px grey;
+	transition: 0.2s ease;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+	transition: 0.2s ease;
+}
+
+a:hover {
+	color: red;
+	transition: 0.2s ease;
+}
+
+#footer {
+	color: blue;
+	border-top: 5px solid red;
+}
+
+footer {
+	color: yellow;
+	border-top: 5px solid #000;
+}

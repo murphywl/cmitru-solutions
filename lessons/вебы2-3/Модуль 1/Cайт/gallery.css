@@ -1,0 +1,169 @@
+/*Осн.стили для всех блоков*/
+
+body {
+	font-family: 'PT Sans', sans-serif;
+}
+
+
+
+h2 {
+	text-align: center;
+}
+
+p {
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+
+}
+
+ul, li {
+	list-style: none;
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+/* 1 экран */
+
+.header {
+
+	background: #000;
+}
+
+
+
+.menu {
+	margin-top: 8px;
+}
+
+.menu__item {
+	margin: 0 57px;
+}
+
+.menu__item a {
+	font-size: 22px;
+	font-weight: 700;
+	color: #fff
+}
+
+
+.title {
+	padding-top: 50px;
+	/*отступ сверху*/
+	padding-bottom: 70px;
+
+}
+
+.title_main {
+	font-size: 32px;
+	text-align: center;
+}
+
+.title_text {
+	font-size: 20px;
+	text-align: center;
+}
+
+p {
+	font-size: 20px;
+
+}
+
+.red {
+
+	color: #E0413B;
+}
+
+
+/*галерея*/
+
+
+
+img {
+
+	width: 220px;
+	height: 220px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+
+}
+
+img:hover {
+	opacity: 0.9;
+	width: 240px;
+	height: 240px;
+	cursor: pointer;
+}
+
+.rotate:hover {
+	transition: all 0.9s ease;
+	transform: rotateZ(-180deg);
+}
+
+
+
+.circle:hover {
+	border-radius: 100%;
+	transition: all 0.5s ease;
+}
+
+
+
+
+@keyframes swing {
+	15% {
+		transform: translateX(5px);
+	}
+
+	30% {
+		transform: translateX(-5px);
+	}
+
+	50% {
+		transform: translateX(3px);
+	}
+
+	65% {
+		transform: translateX(-3px);
+	}
+
+	80% {
+		transform: translateX(2px);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.swaying:hover {
+	animation: swing 1.5s ease;
+	animation-iteration-count: 1;
+	transition: all 0.5s ease;
+}
+
+
+
+
+
+
+/* Футер*/
+
+.footer {
+
+	background: #000;
+
+}
+
+.footer_info {
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	padding: 50px 0 94px;
+	width: 184px;
+	margin: 0 auto;
+	text-align: center;
+}

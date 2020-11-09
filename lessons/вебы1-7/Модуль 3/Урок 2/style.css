@@ -1,0 +1,17 @@
+#generate {
+	width: 120px;
+	height: 120px;
+	background: orange;
+	border-radius: 50%;
+	font-size: 18px;
+	color: black;
+}
+
+h1 {
+	margin-left: 55px;
+}
+
+#container {
+	width: 130px;
+	margin: 50px auto;
+}
