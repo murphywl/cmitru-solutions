@@ -1,0 +1,40 @@
+body {
+	background: #000;
+	color: #fff;
+}
+
+#container {
+	padding-top: 30px;
+	text-align: center;
+}
+
+p {
+	font-size: 30px;
+}
+
+input {
+	width: 100px;
+	height: 30px;
+	font-size: 20px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#slider {
+	width: 300px;
+}
+
+#generate {
+	width: 200px;
+	height: 50px;
+	background: orange;
+	text-align: center;
+	color: #fff;
+	animation: 0.3s ease;
+}
+
+#generate:hover {
+	cursor: pointer;
+	animation: 0.3s ease;
+	opacity: 0.8;
+}

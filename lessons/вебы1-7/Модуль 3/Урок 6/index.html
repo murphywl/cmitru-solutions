@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Генератор историй</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form action="" name="nameForm" id="idForm">
+		<label for="nameInput">Введите имя</label>
+		<br>
+		<input type="text" name="nameInput">
+		<br><br>
+		<input type="radio" name="bodyPiece" value="Усы"> 
+		<label for="bodyPiece">Усы</label>
+		<br>
+		<input type="radio" name="bodyPiece" value="Рот"> 
+		<label for="bodyPiece">Рот</label>
+		<br>
+		<input type="radio" name="bodyPiece" value="Хвост"> 
+		<label for="bodyPiece">Хвост</label>
+
+
+		<br><br>
+		<label for="numberInput">Введите число</label>
+		<br>
+		<input type="text" name="numberInput">
+		<br><br>
+		<input type="radio" name="food" value="Сосисочки"> 
+		<label for="food">Сосисочки</label>
+		<br>
+		<input type="radio" name="food" value="Котлеточки"> 
+		<label for="food">Котлеточки</label>
+		<br>
+		<input type="radio" name="food" value="Пюрешечка"> 
+		<label for="food">Пюрешечка</label>
+
+		<br><br>
+		<input type="button" name="but2" value="Сгенерировать" onclick="submitAction(getElementById('idForm'))">
+
+	</form>
+
+	<br><br>
+	<div id="story" style="width: 500px"></div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

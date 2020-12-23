@@ -1,0 +1,30 @@
+#column1 {
+	position: absolute;
+	width: 100px;
+	height: 300px;
+	background: orange;
+	bottom: 10px;
+	left: 50px;
+}
+
+#column2 {
+	position: absolute;
+	width: 100px;
+	height: 300px;
+	background: red;
+	bottom: 10px;
+	left: 200px;
+}
+
+#winner {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: green;
+	left: 125px;
+	top: 250px;
+	font-size: 30px;
+	text-align: center;
+	color: #fff;
+	display: none;
+}

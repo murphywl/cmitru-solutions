@@ -1,0 +1,33 @@
+body {
+	background: #000;
+	color: #fff;
+	font-size: 30px;
+}
+
+#container {
+	text-align: center;
+	padding-top: 40px;
+}
+
+#minValue {
+	width: 70px;
+	height: 30px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#maxValue {
+	width: 70px;
+	height: 30px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#generate {
+	background: orange;
+	color: #fff;
+	text-align: center;
+	font-size: 30px;
+	border-radius: 5px;
+	padding: 10px;
+}

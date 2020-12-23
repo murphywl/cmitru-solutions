@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text Generator</title>
+</head>
+<body>
+	<form action="" name="nameForm" id="idForm">
+		<label for="nameInput">Введите имя</label>
+		<br>
+		<input type="text" name="nameInput">
+
+		<br><br>
+
+		<input type="radio" name="bodyPiece" value="Усы">
+		<label for="bodyPiece">Усы</label>
+		<br>
+		<input type="radio" name="bodyPiece" value="Рот">
+		<label for="bodyPiece">Рот</label>
+		<br>
+		<input type="radio" name="bodyPiece" value="Хвост">
+		<label for="bodyPiece">Хвост</label>
+		<br>
+
+		<br>
+		<label for="numberInput">Введите число</label>
+		<br>
+		<input type="text" name="numberInput">
+
+		<br><br>
+
+		<input type="radio" name="food" value="Сосисочки">
+		<label for="food">Сосисочки</label>
+		<br>
+		<input type="radio" name="food" value="Котлетки">
+		<label for="food">Котлетки</label>
+		<br>
+		<input type="radio" name="food" value="Пюрешка">
+		<label for="food">Пюрешка</label>
+
+		<br><br>
+
+		<label for="nickInput">Введите ник</label>
+		<br>
+		<input type="text" name="nickInput">
+
+		<br><br>
+
+		<input type="radio" name="animals" value="Лев">
+		<label for="animals">Лев</label>
+		<br>
+		<input type="radio" name="animals" value="Волк">
+		<label for="animals">Волк</label>
+		<br>
+		<input type="radio" name="animals" value="Тигр">
+		<label for="animals">Тигр</label>
+
+		<br><br>
+		<input type="button" name="but2" onclick="submitAction(getElementById('idForm'))" value="Сгенерировать">
+	</form>
+
+	<div id="story"></div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

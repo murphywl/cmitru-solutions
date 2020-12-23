@@ -1,0 +1,3 @@
+function submitAction(){
+	alert('Отправлено');
+}

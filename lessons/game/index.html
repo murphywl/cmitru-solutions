@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<title>Веб Игра | Orange Rabbit</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="https://github.com/murphywl">
+	<meta name="author" content="Andrey Li">
+</head>
+
+<body>
+	<style>
+		/*Обнуление*/
+		*,
+		*:before,
+		*:after {
+			padding: 0;
+			margin: 0;
+			border: 0;
+			box-sizing: border-box;
+		}
+
+		html,
+		body {
+			height: 100%;
+			background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('bg.jpg') 0 0/cover no-repeat;
+			font-family: consolas, monospace;
+			color: #fff;
+			font-size: 16px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		ol {
+			list-style: none;
+			margin-bottom: 10px;
+		}
+
+		h2 {
+			margin-bottom: 10px;
+		}
+
+		.wrapper {
+			min-height: 100%;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			overflow: hidden;
+		}
+
+		.start {
+			flex: 1 1 auto;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.start__row {
+			margin: 20px 0px 20px 0px;
+		}
+
+		.button {
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			text-decoration: none;
+			position: relative;
+			display: inline-block;
+		}
+
+		.button__text {
+			position: relative;
+			height: 80px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0px 50px;
+			border-radius: 50px;
+			font-size: 24px;
+			text-transform: uppercase;
+			color: rgba(0, 0, 0, 0.3);
+			letter-spacing: 10px;
+			transition: all 1s ease 0s;
+			top: 0;
+			overflow: hidden;
+		}
+
+		.button__text:before,
+		.button__text:after {
+			content: '';
+			position: absolute;
+			width: 50%;
+			height: 100%;
+			background-color: #eee;
+			transition: all 0.8s ease 0s;
+		}
+
+		.button__text:before {
+			left: 0;
+			z-index: 2;
+		}
+
+		.button__text:after {
+			right: 0;
+		}
+
+		.button__text span {
+			position: relative;
+			z-index: 2;
+		}
+
+		.button:hover .button__text {
+			top: -10px;
+			color: #fff;
+			transition: all 0.5s ease 0.2s;
+			box-shadow: 0 5px 0px 0 #0c5b52;
+		}
+
+		.button:hover .button__text:before,
+		.button:hover .button__text:after {
+			background-color: #18b5a4;
+		}
+
+		.button:hover .button__text:before {
+			width: 100%;
+		}
+
+		.button:active .button__text {
+			top: -7px;
+			transition: all 0.1s ease 0s;
+			box-shadow: 0 2px 0px 0 #0c5b52;
+		}
+
+		block {}
+
+		.block__item {}
+
+		.block__title {
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			position: relative;
+			cursor: pointer;
+			font-size: 22px;
+			transition: 1s;
+			margin-bottom: 10px;
+		}
+
+		.block__title img {
+			padding: 20px 0px 0px 0px;
+			width: 55px;
+		}
+
+		.block__title:after {
+			content: '';
+			position: absolute;
+			left: 50%;
+			width: 0;
+			height: 1px;
+			background-color: #18b5a4;
+			bottom: 0;
+			transition: 1s;
+		}
+
+		.block__title:hover {
+			color: #18b5a4;
+		}
+
+		.block__title:hover:after {
+			left: 0;
+			width: 100%;
+		}
+
+		.block__text {
+			display: none;
+			margin: 10px 0px 0px 0px;
+		}
+
+		.block__text p {
+			padding: 10px 0px 0px 0px;
+		}
+
+		.block__text img {
+			width: 23px;
+			transition: 0.5s;
+		}
+
+		.block__text img:hover {
+			opacity: 0.5;
+			transition: 0.5s;
+		}
+
+		.block__text span {
+			padding: 30px 10px 0px 10px;
+		}
+
+	</style>
+	<div class="wrapper">
+		<div class="start">
+			<div class="start__row">
+				<div class="block__title">
+					<h1>С НОВЫМ ГОДОМ!</h1>
+				</div>
+				<h3>Дорогие мои студенты, я вам сделал небольшой подарок на Новый год в виде веб игры</h3>
+			</div>
+			<div class="start__row">
+				<a href="game.html" class="button">
+					<span class="button__text">
+						<span>Начать игру</span>
+					</span>
+				</a>
+			</div>
+			<div class="start__row">
+				<div class="block one">
+					<h2>Выберите вашу группу</h2>
+					<div class="bloc__item">
+						<div class="block__title">ВП 1-7</div>
+						<div class="block__text">
+							<ol>
+								<li>
+									<h4>С НОВЫМ ГОДОМ!</h4>
+								</li>
+								<li>Александр</li>
+								<li>Богдан</li>
+								<li>Дмитрий</li>
+								<li>Николай</li>
+								<li>Вячеслав</li>
+								<li>Семён</li>
+								<li>Антон</li>
+								<li>Ильяс</li>
+								<li>Марк</li>
+								<li>Cаша</li>
+							</ol>
+						</div>
+					</div>
+					<div class="bloc__item">
+						<div class="block__title">ВП 1-8</div>
+						<div class="block__text">
+							<ol>
+								<li>
+									<h4>С НОВЫМ ГОДОМ!</h4>
+								</li>
+								<li>Ольга</li>
+								<li>Илья</li>
+								<li>Дарья</li>
+								<li>Илья</li>
+								<li>Эрик</li>
+								<li>Кирилл</li>
+								<li>Николос</li>
+								<li>Влад</li>
+								<li>Максим</li>
+							</ol>
+						</div>
+					</div>
+					<div class="bloc__item">
+						<div class="block__title">ВП 2-3</div>
+						<div class="block__text">
+							<ol>
+								<li>
+									<h4>С НОВЫМ ГОДОМ!</h4>
+								</li>
+								<li>Константин</li>
+								<li>Илья</li>
+								<li>Максим</li>
+								<li>Анастасия</li>
+								<li>Николай</li>
+								<li>Борислав</li>
+								<li>Марк</li>
+								<li>Данис</li>
+							</ol>
+						</div>
+					</div>
+					<div class="bloc__item">
+						<div class="block__title">Администраторы</div>
+						<div class="block__text">
+							<ol>
+								<li>
+									<h4>С НОВЫМ ГОДОМ!</h4>
+								</li>
+								<li>Юлия</li>
+								<li>Екатерина</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.block__title').click(function(event) {
+					if ($('.block').hasClass('one')) {
+						$('.block__title').not($(this)).removeClass('active');
+						$('.block__text').not($(this).next()).slideUp(300);
+					}
+					$(this).toggleClass('active').next().slideToggle(300);
+				});
+			});
+
+		</script>
+	</div>
+</body>
+
+</html>
