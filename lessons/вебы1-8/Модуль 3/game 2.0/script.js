@@ -47,7 +47,24 @@ setScore(0);
 */
 function setTimer(timeToSet){
 	console.log(timer);
-	timerObj.innerHTML = "Timer: " + timeToSet;
+	timerObj.innerHTML = "Timer: " + timeToSet.toFixed(1);
+}
+
+function cntdwn(){ 
+	timer -= 1; 
+	setTimer(timer);
+	if(timer <= 0){
+		clearInterval(intervalId);
+		document.removeEventListener('mousemove', mouseListener);
+		helloText.innerHTML="Конец игры! <br> Чтобы начать игру заново, нажмите ENTER";
+		helloText.style.display = "block";
+		orange.style.display = "none";
+		pig.style.display = "none";
+		scoreObj.style.display = "none";
+		timerObj.style.display = "none";
+
+		document.addEventListener('keydown', enterListener);
+	}
 }
 
 function startGame(event){
@@ -67,7 +84,7 @@ function startGame(event){
 
 		timerObj.style.display = 'block';
 		timer = 10;
-		setTimer(time); //
+		setTimer(timer); 
 
 		intervalId = setInterval(function(){cntdwn();}, 1000);
 	}
@@ -86,12 +103,17 @@ function checkCollision(){
 		){
 		spawnOrange();
 		score++;
+		timer += 1;
 		setScore(score);
 	}
 }
 
 function setScore(scoreToSet){
 	scoreObj.innerHTML = "Score: " + scoreToSet;
+	
+	if(scoreToSet == 10){
+		alert('Поздравляю! 1 уровень пройден');
+	}
 }
 
 function spawnOrange(){

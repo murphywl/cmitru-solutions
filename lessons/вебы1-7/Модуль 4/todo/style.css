@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Roboto:ital,wght@1,100&display=swap');
+
+body{
+	font-family: 'Hanalei Fill', cursive;
+}
+input{
+	font-family: 'Roboto', sans-serif;
+}

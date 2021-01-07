@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery - DOM</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<ul id="parent">
+		<li id="grandpa">Дедушка</li>
+		<li id="grandma">Бабушка</li>
+		<ul id='inside'>
+			<li id="dad">Папа
+				<ul id="inside">
+					<li id="son">Сын</li>
+					<li id="daughter">Дочка</li>
+				</ul>
+			</li>
+			<li id="mother">Мама</li>
+		</ul>
+	</ul>
+
+	<div id="text">ТЕКСТ</div>
+
+	<script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

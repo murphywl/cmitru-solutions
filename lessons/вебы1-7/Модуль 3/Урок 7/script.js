@@ -1,5 +1,7 @@
 var timer = 30;
 
+
+
 var intervalId;
 
 document.getElementsByTagName('body')[0].insertAdjacentHTML('beforeEnd', '<div id="helloText">Нажмите клавишу SPACE, чтобы начать игру</div>');
